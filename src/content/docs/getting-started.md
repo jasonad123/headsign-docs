@@ -307,11 +307,12 @@ require opening ports.
 
 ### Option 4: Direct Node.js Deployment (Development Only)
 
-> [!CAUTION]
-> This method is **not recommended** for production deployments. Use Docker or a PaaS platform instead.
-> **Only use this if** you're actively developing Headsign or need to make custom modifications.
+:::caution
+This method is **not recommended** for production deployments. Use Docker or a PaaS platform instead.
+**Only use this if** you're actively developing Headsign or need to make custom modifications.
+:::
 
-See [docs/local-deployment](/docs/local-deployment.md) for more information.
+See [Local deployment](/local-deployment.md) for more information.
 
 ## Configuration
 
@@ -319,13 +320,13 @@ See [docs/local-deployment](/docs/local-deployment.md) for more information.
 
 Headsign supports automatic configuration on first launch, ideal for deploying multiple instances at once.
 
-See the documentation for [unattended setup](../docs/config/unattended-setup.md)] for more information on available variables.
+See the documentation for [unattended setup](/config/unattended-setup) for more information on available variables.
 
 ### Caching
 
 Headsign also has built-in caching. Caching can be adjusted based on your Transit API subscription.
 
-See the documentation for [caching](../docs/config/caching.md)] for more information on the caching setup.
+See the documentation for [caching](/config/caching) for more information on the caching setup.
 
 ## Updating Your Deployment
 

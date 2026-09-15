@@ -4,15 +4,15 @@ title: Docker deployment
 
 This documentation walks through how to deploy Headsign using Docker and using the project's Dockerfiles.
 
-> [!TIP]
-> For most users, you should be fine to just use the prebuilt Docker images available on [Docker Hub](https://hub.docker.com/r/jasonad123/headsign) or the [project's package page](https://github.com/jasonad123/headsign/pkgs/container/headsign). These instructions are for individuals/organizations who prefer to build and/or need to build from Dockerfiles on their own.
+:::tip
+For most users, you should be fine to just use the prebuilt Docker images available on [Docker Hub](https://hub.docker.com/r/jasonad123/headsign) or the [project's package page](https://github.com/jasonad123/headsign/pkgs/container/headsign). These instructions are for individuals/organizations who prefer to build and/or need to build from Dockerfiles on their own.
+:::
 
 ## Included Dockerfiles
 
-This project has four Dockerfiles:
+This project has three Dockerfiles:
 
 - [Dockerfile](/Dockerfile) - the primary Dockerfile with BuildKit cache mounts (this is how we build all standard images)
-- [Dockerfile.dhi](/Dockerfile.dhi) - exactly the same as Dockerfile but uses [Docker hardened images](https://hub.docker.com/hardened-images/catalog) as its base
 - [Dockerfile.railway](/Dockerfile.railway) - a Dockerfile optimized for Railway's build process, by removing cache mounts.
 - [Dockerfile.legacy](/docker-legacy/Dockerfile.legacy) - the "original" Dockerfile for this project, used on Docker builds before v1.3.2
 

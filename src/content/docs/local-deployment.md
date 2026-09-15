@@ -4,9 +4,10 @@ description: For advanced users only!
 ---
 This documentation walks through how to deploy Headsign using `pnpm`.
 
-> [!CAUTION]
-> This method is **not recommended** for production deployments. Use Docker or a PaaS platform instead.
-> **Only use this if** you're actively developing Headsign or need to make custom modifications.
+:::caution
+This method is **not recommended** for production deployments. Use Docker or a PaaS platform instead.
+**Only use this if** you're actively developing Headsign or need to make custom modifications.
+:::
 
 1. **Install prerequisites**:
 
