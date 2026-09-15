@@ -15,8 +15,11 @@ export default defineConfig({
             ],
           social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
           sidebar: [
+                { slug: '/getting-started' },
+                { slug: '/docker-deployment' },
+                { slug: '/local-deployment' },
               {
-                  label: 'Config',
+                  label: 'Advanced configuration',
                   items: [{ autogenerate: { directory: 'config' } }],
               },
           ],
